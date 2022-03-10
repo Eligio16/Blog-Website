@@ -1,12 +1,12 @@
 <%- include('partials/header') -%>
 
-    <h1>Home</h1>
+    <h2>Home</h2>
     <p><%= contenidoInicio %></p>
 
     <% homePosts.forEach((homePosts) => {%> 
         <div>
-            <h2> <%= homePosts.nTitulo %> </h2>
-            <p> <%= homePosts.nPost %> </p>
+            <h3> <%= homePosts.nTitulo %> </h3>
+            <p> <%= homePosts.nPost.substring(0,100) + '...' %> <a href="/post/<%=homePosts.nTitulo%> ">Leer más</a> </p>
         </div>
 
     <% }); %>

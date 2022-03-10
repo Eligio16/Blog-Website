@@ -19,6 +19,10 @@
 	padding-bottom: 60px;
 }
 
+.navbar-brand{
+    font-size: 2.5rem;
+}
+
 .footer {
 	position: absolute;
 	text-align: center;
